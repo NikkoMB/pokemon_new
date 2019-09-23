@@ -21,4 +21,5 @@ app.get('/', (req, res) => {
 app.get('/bulbasaur', (res,req) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
     alert('you chose Bulbasaur!');
+    alert('Feed, drink, and give love to your pokémon until it evolves!');
 });

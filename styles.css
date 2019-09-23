@@ -12,6 +12,27 @@ h1{
     margin-left: 60px;
 }
 
+#gotcha_bulb{
+    margin-left: 500px;
+}
+
+#turtle{
+    margin-left: 550px;
+}
+
+.container{
+    margin-left: 610px;
+}
+
+#dino{
+    margin-left: 570px;
+}
+
+button{
+    height: 80px;
+    width: 80px;
+}
+
 a{
     color: white;
 }
