@@ -23,3 +23,15 @@ app.get('/bulbasaur', (res,req) => {
     alert('you chose Bulbasaur!');
     alert('Feed, drink, and give love to your pokémon until it evolves!');
 });
+
+app.get('/charmander', (res,req) =>{
+    res.sendFile(path.join(__dirname, 'charmander.html'));
+    alert('you chose Charmander!');
+    alert('Feed, drink, and give love to your pokémon until it evolves!');
+});
+
+app.get('/squirtle', (res,req) => {
+    res.sendFile(path.join(__dirname, 'squirtle.html'));
+    alert('you chose Squirtle!');
+    alert('Feed, drink, and give love to your pokémon until it evolves!');
+});
