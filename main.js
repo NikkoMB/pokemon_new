@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+app.listen('3000' || process.env.PORT);
+console.log('we live!');
+
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -15,23 +18,16 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
-    alert('choose your Pokémon');
 });
 
 app.get('/bulbasaur', (res,req) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
-    alert('you chose Bulbasaur!');
-    alert('Feed, drink, and give love to your pokémon until it evolves!');
 });
 
 app.get('/charmander', (res,req) =>{
     res.sendFile(path.join(__dirname, 'charmander.html'));
-    alert('you chose Charmander!');
-    alert('Feed, drink, and give love to your pokémon until it evolves!');
 });
 
 app.get('/squirtle', (res,req) => {
     res.sendFile(path.join(__dirname, 'squirtle.html'));
-    alert('you chose Squirtle!');
-    alert('Feed, drink, and give love to your pokémon until it evolves!');
 });
