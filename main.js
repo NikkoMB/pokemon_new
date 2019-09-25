@@ -14,20 +14,21 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/styles.css', express.static(path.join(__dirname, '/styles.css')));
+app.use('/images', express.static(path.join(__dirname, '/images')));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
+app.get('/index.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/bulbasaur', (res,req) => {
+app.get('/bulbasaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
 });
 
-app.get('/charmander', (res,req) =>{
+app.get('/charmander.html', (req,res) =>{
     res.sendFile(path.join(__dirname, 'charmander.html'));
 });
 
-app.get('/squirtle', (res,req) => {
+app.get('/squirtle.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'squirtle.html'));
 });

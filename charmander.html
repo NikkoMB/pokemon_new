@@ -15,8 +15,9 @@
 
 <body>
     <script>
-        alert('you chose Charmander!');
-        alert('Feed, drink, and give love to your pokémon until it evolves!');
+        'use strict';
+        setTimeout(() => { alert("you chose Charmander!"); }, 200);
+        setTimeout(() => { alert('Feed, drink, and give love to your Charmander until it evolves!'); }, 250);
     </script>
     <h1 id="char">
         GOTCHA! YOU GOT CHARMANDER!
@@ -33,7 +34,7 @@
             love ❤️
         </button>
     </div>
-    <a href="index.html">
+    <a href="/index.html">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
             back
         </button>
