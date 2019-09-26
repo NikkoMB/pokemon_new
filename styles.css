@@ -14,10 +14,16 @@ h1{
 
 #poke{
     margin-left: 550px;
+    color: white;
+    font-size: 70px;
+}
+
+#char{
+    margin-right: 100px;
 }
 
 #gotcha_bulb{
-    margin-left: 500px;
+    margin-left: 600px;
 }
 
 #turtle{
@@ -25,12 +31,19 @@ h1{
 }
 
 .container{
-    margin-left: 610px;
+    margin-left: 550px;
+    margin-top: 100px;
 }
 
 #dino{
     margin-left: 570px;
+    margin-top: 100px;
 }
+
+#turtle{
+    margin-top: 100px;
+}
+
 
 button{
     height: 80px;
@@ -38,5 +51,10 @@ button{
 }
 
 a{
-    color: white;
+    color: transparent;
+}
+
+.row{
+    margin-left: 390px;
+    margin-top: 150px;
 }

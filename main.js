@@ -17,7 +17,7 @@ app.use('/styles.css', express.static(path.join(__dirname, '/styles.css')));
 app.use('/images', express.static(path.join(__dirname, '/images')));
 app.use(bodyParser.json());
 
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
@@ -25,7 +25,7 @@ app.get('/bulbasaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
 });
 
-app.get('/charmander.html', (req,res) =>{
+app.get('/charmander.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'charmander.html'));
 });
 
