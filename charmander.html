@@ -13,32 +13,68 @@
 
 </head>
 
-<body>
-    <script>
-        'use strict';
-        setTimeout(() => { alert("you chose Charmander!"); }, 200);
-        setTimeout(() => { alert('Feed, drink, and give love to your Charmander until it evolves!'); }, 250);
-    </script>
+
+<body background="images/char_wallpaper.jpg!d">
     <h1 id="char">
         GOTCHA! YOU GOT CHARMANDER!
     </h1>
     <img id="gotcha_bulb" src="images/charmander.gif">
     <div id="dino">
-        <button>
+        <button id="hungry">
             Eat 🍎
         </button>
-        <button>
+        <button id="drink">
             Drink 🍶
         </button>
-        <button>
+        <button id="love">
             love ❤️
         </button>
     </div>
+    <div id="evolve"></div>
     <a href="/">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
             back
         </button>
     </a>
 </body>
+
+<script>
+    'use strict';
+    setTimeout(() => { alert("you chose Charmander!"); }, 200);
+    setTimeout(() => { alert('Feed, drink, and give love to your Charmander until it evolves!'); }, 250);
+
+    let food = document.getElementById('hungry');
+    let drink = document.getElementById('drink');
+    let love = document.getElementById('love');
+    let evolve = document.getElementById('evolve');
+
+    let eating = "";
+    let drinking = "";
+    let loving = "";
+
+   food.onclick = () => {
+        eating++
+        if (eating === 5 || eating >= 5) {
+            alert("Charmander is full");
+        };
+    };
+
+  drink.onclick = () => {
+        drinking++
+        if (drinking === 5 || drinking >= 5) {
+            alert("Charmander had enough to drink");
+        };
+    };
+
+   love.onclick = () => {
+        loving++
+        if (loving === 5 || loving >= 5) {
+            alert("Your love is enough for Charmander");
+        };
+    };
+
+    
+
+</script>
 
 </html>
