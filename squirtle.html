@@ -40,5 +40,45 @@
         </button>
     </a>
 </body>
-
+<script>
+        'use strict';
+        setTimeout(() => { alert("you chose Charmander!"); }, 200);
+        setTimeout(() => { alert('Feed, drink, and give love to your Charmander until it evolves!'); }, 250);
+    
+        let food = document.getElementById('hungry');
+        let drink = document.getElementById('drink');
+        let love = document.getElementById('love');
+        let evolve = document.getElementById('evolve');
+    
+        let eating = "";
+        let drinking = "";
+        let loving = "";
+    
+       food.onclick = function hungry(){
+            eating++
+            if (eating === 5 || eating >= 5) {
+                alert("Charmander is full");
+            };
+        };
+    
+      drink.onclick = function thirsty() {
+            drinking++
+            if (drinking === 5 || drinking >= 5) {
+                alert("Charmander had enough to drink");
+            };
+        };
+    
+       love.onclick = function hearts() {
+            loving++
+            if (loving === 5 || loving >= 5) {
+                alert("Your love is enough for Charmander");
+            };
+       };
+    
+    
+    
+        
+    
+    </script>
+    
 </html>
