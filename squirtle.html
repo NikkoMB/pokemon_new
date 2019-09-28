@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YOU CHOSE SQUIRTLE!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 
 <body background="images/squirt_wallpaper.jpg">
@@ -18,14 +19,8 @@
     </h1>
     <img id="gotcha_bulb" src="images/squirtle.gif">
     <div id="turtle">
-        <button id="eat">
-            Eat 🍎
-        </button>
-        <button id="drink">
-            Drink 🍶
-        </button>
-        <button id="love">
-            love ❤️
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="eat">
+           Rare Candy 🍬
         </button>
     </div>
     <a href="/">
@@ -37,38 +32,25 @@
 <script>
         'use strict';
         setTimeout(() => { alert("you chose Squirtle!"); }, 200);
-        setTimeout(() => { alert('Feed, drink, and give love to your Squirtle until it evolves!'); }, 250);
+        setTimeout(() => { alert('Feed your Squirtle with Rare Candy until it evolves!'); }, 250);
     
-        let food = document.getElementById('hungry');
-        let drink = document.getElementById('drink');
-        let love = document.getElementById('love');
-        let evolve = document.getElementById('evolve');
-    
-        let eating = "";
-        let drinking = "";
-        let loving = "";
-    
-       food.onclick = function hungry(){
-            eating++
-            if (eating === 5 || eating >= 5) {
-                alert("Squirtle is full");
-            };
+
+
+    let food = document.getElementById('hungry');
+    let evolve = document.getElementById('evolve');
+
+    let eating = "";
+
+    food.onclick = () => {
+        eating++
+        if (eating === 5 || eating >= 5) {
+            alert("Charmander is full");
+            alert("Press the evolve button so Squirtle can evolve!");
+            evolve.innerHTML = '<a href="wartortle.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
         };
-    
-      drink.onclick = function thirsty() {
-            drinking++
-            if (drinking === 5 || drinking >= 5) {
-                alert("Squirtle had enough to drink");
-            };
-        };
-    
-       love.onclick = function hearts() {
-            loving++
-            if (loving === 5 || loving >= 5) {
-                alert("Your love is enough for Squirtle");
-            };
        };
-    
+
+      
     
     
         
