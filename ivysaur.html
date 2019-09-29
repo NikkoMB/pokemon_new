@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YOU CHOSE BULBASAUR!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body background="images/bulb_wallpaper.jpg">
+    <h1>
+        GOTCHA! YOU GOT BULBASAUR!
+    </h1>
+    <img id="gotcha_bulb" src="images/bulbasaur.gif">
+    <div class='container'>
+        <button  id="eat">
+           🍬
+        </button>
+    </div>
+    <a href="/">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
+            Back
+        </button>
+    </a>
+</body>
+
+<script>
+   'use strict';
+        setTimeout(() => { alert("Bulbasaur is now Ivysaur!"); }, 200);
+     
+
+
+    let food = document.getElementById('hungry');
+    let evolve = document.getElementById('evolve');
+
+    let eating = "";
+
+    food.onclick = () => {
+        eating++
+        if (eating === 5 || eating >= 5) {
+            alert("Ivysaur is ready to evolve!");
+            evolve.innerHTML = '<a href="ivysaur.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
+        };
+
+    };
+
+
+
+</script>
+
+</html>
