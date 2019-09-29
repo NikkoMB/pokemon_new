@@ -29,6 +29,10 @@ app.get('/charmander.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'charmander.html'));
 });
 
+app.get('/charmeleon.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'charmeleon.html'));
+});
+
 app.get('/squirtle.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'squirtle.html'));
 });

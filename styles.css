@@ -41,8 +41,13 @@ h1{
 }
 
 #evolve{
-    margin-left: 330px;
-    margin-top: 80px;
+    margin-left: 325px;
+    margin-top: 10px;
+}
+
+#charmeleon{
+    margin-left: 590px;
+    height: 300px;
 }
 
 #dino{
