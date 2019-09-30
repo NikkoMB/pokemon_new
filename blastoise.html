@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>YOU CHOSE BULBASAUR!</title>
+    <title>BLASTOISE IS HERE!</title>
     <link rel="icon" href="images/poke_icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -14,15 +14,18 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 
-<body background="images/wartortle_background.jpg">
+<script>
+    'use strict';
+     setTimeout(() => { alert("Wartortle is now Blastoise!"); }, 200);
+     setTimeout(() => { alert("Press the back button to play again!"); }, 250);
+ </script>
+
+<body background="images/blastoise_background.jpg">
     <h1 id="war_is_here">
-       WARTORTLE IS HERE!
+       BLASTOISE IS HERE!
     </h1>
-    <img id="war" src="images/wartortle.gif">
+    <img id="blast" src="images/blastoise.gif">
     <div class='container'>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="eat">
-           🍬
-        </button>
     </div>
     <a href="/">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
@@ -31,30 +34,5 @@
     </a>
     <div id="evolve"></div>
 </body>
-
-<script>
-   'use strict';
-    setTimeout(() => { alert("Wartortle is now Blastoise!"); }, 200);
-    setTimeout(() => { alert("Press the back button to play again!"); }, 250);
-     
-
-
-    let food = document.getElementById('eat');
-    let evolve = document.getElementById('evolve');
-
-    let eating = "";
-
-    food.onclick = () => {
-        eating++
-        if (eating === 10 || eating >= 10) {
-            alert("Wartortle is ready to evolve!");
-            evolve.innerHTML = '<a href="blastoise.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
-        };
-
-    };
-
-
-
-</script>
 
 </html>
