@@ -5,13 +5,15 @@ html, body {
 
 
 
-
-
-
 h1{
     margin-left: 450px;
     font-family: 'Luckiest Guy', cursive;
     font-size: 50px;
+}
+
+#charizard{
+    height: 400px;
+    margin-left: 500px;
 }
 
 #squirt{
