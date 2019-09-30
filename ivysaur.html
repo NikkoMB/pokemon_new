@@ -15,12 +15,12 @@
 </head>
 
 <body background="images/bulb_wallpaper.jpg">
-    <h1>
-        GOTCHA! YOU GOT BULBASAUR!
+    <h1 id="ivy_is_here">
+       IVYSAUR IS HERE!
     </h1>
-    <img id="gotcha_bulb" src="images/bulbasaur.gif">
+    <img id="ivysaur" src="images/ivysaur.gif">
     <div class='container'>
-        <button  id="eat">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="eat">
            🍬
         </button>
     </div>
@@ -29,6 +29,7 @@
             Back
         </button>
     </a>
+    <div id="evolve"></div>
 </body>
 
 <script>
@@ -37,7 +38,7 @@
      
 
 
-    let food = document.getElementById('hungry');
+    let food = document.getElementById('eat');
     let evolve = document.getElementById('evolve');
 
     let eating = "";

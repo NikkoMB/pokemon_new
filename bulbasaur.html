@@ -20,7 +20,7 @@
     </h1>
     <img id="gotcha_bulb" src="images/bulbasaur.gif">
     <div class='container'>
-        <button  id="eat">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="eat">
            🍬
         </button>
     </div>
@@ -29,6 +29,7 @@
             Back
         </button>
     </a>
+    <div id="evolve"></div>
 </body>
 
 <script>
@@ -37,7 +38,7 @@
         setTimeout(() => { alert('Feed, drink, and give love to your Bulbasaur until it evolves!'); }, 250);
 
 
-    let food = document.getElementById('hungry');
+    let food = document.getElementById('eat');
     let evolve = document.getElementById('evolve');
 
     let eating = "";

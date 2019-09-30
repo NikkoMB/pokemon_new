@@ -69,6 +69,18 @@ a{
     color: transparent;
 }
 
+#ivy_is_here{
+    margin-left: 560px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+}
+
+#ivysaur{
+    margin-left: 580px;
+    height: 250px;
+
+}
+
 .row{
     margin-left: 390px;
     margin-top: 150px;

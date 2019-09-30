@@ -20,9 +20,13 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
-
+/*Bulbasaur evolution */
 app.get('/bulbasaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
+});
+
+app.get('/ivysaur.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'ivysaur.html'));
 });
 
 app.get('/charmander.html', (req,res) => {
