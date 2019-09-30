@@ -22,13 +22,17 @@ app.get('/', (req, res) => {
 });
 
 
-/*---------------Bulbasaur evolution-----------------------------*/
+/*---------------BULBASAUR EVOLUTION -----------------------------*/
 app.get('/bulbasaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
 });
 
 app.get('/ivysaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'ivysaur.html'));
+});
+
+app.get('/venusaur.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'venusaur.html'));
 });
 
 ////////////////////////////////////////////////////////////
@@ -51,4 +55,12 @@ app.get('/charizard.html', (req,res) => {
 
 app.get('/squirtle.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'squirtle.html'));
+});
+
+app.get('/wartortle.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'wartortle.html'));
+});
+
+app.get('/Blastoise.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'Blastoise.html'));
 });
