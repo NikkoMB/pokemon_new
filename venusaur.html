@@ -14,46 +14,27 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 
+<script>
+    'use strict';
+    setTimeout(() => { alert("Ivysaur is now Venusaur!"); }, 200);
+    setTimeout(() => { alert("Press the back button to play again!"); }, 250);
+
+
+
+</script>
+
 <body background="images/bulb_wallpaper.jpg">
     <h1 id="ivy_is_here">
-       IVYSAUR IS HERE!
+        IVYSAUR IS HERE!
     </h1>
     <img id="ivysaur" src="images/ivysaur.gif">
-    <div class='container'>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="eat">
-           🍬
-        </button>
-    </div>
     <a href="/">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
             Back
         </button>
     </a>
-    <div id="evolve"></div>
 </body>
 
-<script>
-   'use strict';
-        setTimeout(() => { alert("Bulbasaur is now Ivysaur!"); }, 200);
-     
 
-
-    let food = document.getElementById('eat');
-    let evolve = document.getElementById('evolve');
-
-    let eating = "";
-
-    food.onclick = () => {
-        eating++
-        if (eating === 5 || eating >= 5) {
-            alert("Ivysaur is ready to evolve!");
-            evolve.innerHTML = '<a href="venusaur.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
-        };
-
-    };
-
-
-
-</script>
 
 </html>
