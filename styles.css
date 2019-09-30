@@ -87,6 +87,12 @@ a{
     font-size: 50px;
 }
 
+#war_is_here{
+    margin-left: 500px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+}
+
 #ivysaur{
     margin-left: 580px;
     height: 250px;
@@ -95,6 +101,10 @@ a{
 
 #venusaur{
     margin-left: 550px;
+}
+
+#war{
+    margin-left: 420px;
 }
 
 #venu_is_here{
