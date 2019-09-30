@@ -20,7 +20,9 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
-/*Bulbasaur evolution */
+
+
+/*---------------Bulbasaur evolution-----------------------------*/
 app.get('/bulbasaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'bulbasaur.html'));
 });
@@ -29,6 +31,9 @@ app.get('/ivysaur.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'ivysaur.html'));
 });
 
+////////////////////////////////////////////////////////////
+
+/*-------------------CHARMANDER EVOLUTION-----------------------*/
 app.get('/charmander.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'charmander.html'));
 });
@@ -36,6 +41,13 @@ app.get('/charmander.html', (req,res) => {
 app.get('/charmeleon.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'charmeleon.html'));
 });
+
+app.get('/charizard.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'charizard.html'));
+});
+
+
+////////////////////////////////////////////////////////////
 
 app.get('/squirtle.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'squirtle.html'));

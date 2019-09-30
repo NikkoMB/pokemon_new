@@ -15,48 +15,32 @@
 
 </head>
 
-
-<body background="images/meleon.jpg">
-    <h1 id="char">
-       CHARIZARD IS HERE!
-    </h1>
-    <img id="charmeleon" src="images/charmeleon.gif">
-    <div id="dino">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="hungry">
-             🍬
-        </button>
-    </div>
-    
-    <div class="second">
-    <a href="/">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
-            back
-        </button>
-    </a>
-    <div id="evolve"></div>
-    </div>
-</body>
-
 <script>
     'use strict';
     setTimeout(() => { alert("Your Charmeleon evolved into Charizard!"); }, 200);
-    setTimeout(() => { alert("Press the back button to play again!");}, 250);
+    setTimeout(() => { alert("Press the back button to play again!"); }, 250);
 
+</script>
 
-    let food = document.getElementById('hungry');
-    let evolve = document.getElementById('evolve');
+<body background="images/meleon.jpg">
+    <h1 id="char">
+        CHARIZARD IS HERE!
+    </h1>
+    <img id="charmeleon" src="images/charizard.gif">
+    <div id="dino">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="hungry">
+            🍬
+        </button>
+    </div>
 
-    let eating = "";
+    <div class="second">
+        <a href="/">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
+                back
+            </button>
+        </a>
+        <div id="evolve"></div>
+    </div>
+</body>
 
-    food.onclick = () => {
-        eating++
-        if (eating === 10 || eating >= 10) {
-            alert("Charmeleon is ready to evolve!");
-            evolve.innerHTML = '<a href="charizard.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
-        };
-
-        
-
-    };
-
-
+</html>
