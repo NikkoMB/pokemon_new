@@ -61,6 +61,6 @@ app.get('/wartortle.html', (req,res) => {
     res.sendFile(path.join(__dirname, 'wartortle.html'));
 });
 
-app.get('/Blastoise.html', (req,res) => {
-    res.sendFile(path.join(__dirname, 'Blastoise.html'));
+app.get('/blastoise.html', (req,res) => {
+    res.sendFile(path.join(__dirname, 'blastoise.html'));
 });
