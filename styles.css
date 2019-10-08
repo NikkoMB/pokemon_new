@@ -123,3 +123,8 @@ a{
 #eat{
     margin-left: 100px;
 }
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100%  100%; 
+}
