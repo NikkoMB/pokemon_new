@@ -7,33 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CHARMELEON IS HERE!</title>
     <link rel="icon" href="images/poke_icon.png">
+    <!-- MY CSS-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
 </head>
 
 
 <body background="images/meleon.jpg">
-    <h1 id="char">
-       CHARMELEON IS HERE!
-    </h1>
-    <img id="charmeleon" src="images/charmeleon.gif">
-    <div id="dino">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="hungry">
-             🍬
-        </button>
+    <div class='container'>
+        <div class='row'>
+            <div class="col-lg-12 justify-content-center ">
+                <h1 style="text-align: center;  font-family: 'Luckiest Guy', cursive; font-size: 100px;">
+                    CHARMELEON IS HERE!
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-12 justify-content-center">
+            <img style="align-content: center; height: 400px; margin-left: 400px;" src="images/charmeleon.gif">
+        </div>
     </div>
-    
-    <div class="second">
-    <a href="/">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="go_back">
-            back
-        </button>
-    </a>
-    <div id="evolve"></div>
     </div>
 </body>
 
@@ -55,7 +63,7 @@
             evolve.innerHTML = '<a href="charizard.html"><button id="evolve" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">EVOLVE</button>';
         };
 
-        
+
 
     };
 
